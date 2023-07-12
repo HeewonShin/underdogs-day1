@@ -20,7 +20,7 @@ id와 class 두 개를 동시에 지정하면 항상 id가 우선*/
     color: red;
 } */
 
-.box01{
+/* .box01{
     box-sizing: content-box ;
     width: 200px;
     height: 200px;
@@ -50,4 +50,20 @@ id와 class 두 개를 동시에 지정하면 항상 id가 우선*/
     width: 50%;
     height: 50%;
     background-color: cornflowerblue;
+} */
+
+/* .flex_box{
+    display: flex;
+    justify-content: center;/*축 수직 가운데 정렬
+}
+.item_box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid red;
+    
+} */
+
+.flex_box{
+    display: flex;
+    align-items: flex-start;   
 }
