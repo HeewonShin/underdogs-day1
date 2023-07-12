@@ -1,0 +1,53 @@
+/* #hello{
+    color: red;
+}
+.text{
+    color: green;
+} 
+
+id와 class 두 개를 동시에 지정하면 항상 id가 우선*/
+
+/* *{color: blueviolet;} */
+
+/* p, h4{
+    color: green;
+} */
+
+/* h2.text{
+    color:purple;
+}
+#coding{
+    color: red;
+} */
+
+.box01{
+    box-sizing: content-box ;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: red;
+    color: white;
+}
+.box02{
+    box-sizing: border-box ;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: blue;
+    color: white;
+}
+
+#outter{
+    box-sizing: content-box;
+    width: 300px;
+    height: 300px;
+    background-color: coral;
+}
+#inner{
+    box-sizing: content-box;
+    width: 50%;
+    height: 50%;
+    background-color: cornflowerblue;
+}
