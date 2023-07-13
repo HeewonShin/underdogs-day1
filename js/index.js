@@ -31,5 +31,71 @@ switch (a % 49){
         break;
 }
 
+//let input = prompt('숫자를 입력하세요 : ');
+// let input = Number(prompt('숫자를 입력하세요 : ', '숫자'));
+//                                                 // placeholder
+
+// console.log(typeof(input));
+
+// switch(input % 2) {
+//     case 0:
+//         console.log('짝수');
+//         break;
+//     case 1:
+//         console.log('짝수');
+//         break;
+//     default:
+//         console.log('숫자가 아님');
+//         break;
+// }
 
 
+
+
+// let daysOfWeek = ['Monday', 'Tuesday', 'Wednesday',
+//                     'Thursday', 'Friday', 'Saturday', 'Sunday', 
+//                         54, true, [1, 2]];
+
+// console.log(daysOfWeek[1]); //Tuseday 출력
+
+// let obj = {
+//     name: 'Shin', //key값은 변수 형태로 들어감
+//     age : 28,
+//     isMarried : false,
+//     favoriteMovies : ['Elemental', 'Spiderman'],
+//     favoritFoods : [{name:'hamburger',isHealthy : false},
+//                     {name:'pizza', isHelthy:false}]
+// }
+// console.log(obj.name);
+// console.log(obj.favoriteMovies[0]);
+// console.log(obj.favoritFoods[1]);
+
+
+/**함수**/
+function sayHello(name){
+    console.log('Hello', name);
+}
+sayHello('David');
+
+// function addNum(a, b){
+//     console.log(a+ b);
+// }
+// addNum(2, 3);
+
+// let result = addNum(2, 3);
+// console.log(result);//undefined
+
+function addNum(a, b){
+    return a + b;
+}
+let result = addNum(2, 3);
+console.log(result);//5
+
+let obj = {
+    name: 'Shin',
+    age : 28,
+    sayHello2 : function(){return 'Hello2';}
+}
+
+console.log(obj.sayHello2()); //console 자체도 object임
+obj.sayHello2();
