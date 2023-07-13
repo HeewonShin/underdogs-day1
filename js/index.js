@@ -64,18 +64,22 @@ switch (a % 49){
 //     isMarried : false,
 //     favoriteMovies : ['Elemental', 'Spiderman'],
 //     favoritFoods : [{name:'hamburger',isHealthy : false},
-//                     {name:'pizza', isHelthy:false}]
+//                     {name:'pizza', isHelthy:false}],
+//     sayMyName : function(){
+//                  console.log(`my name is ${this.name}`)   //this를 이용해서 같은 오브젝트 내의 name 변수 사용 가능!!!             
+//      }
 // }
 // console.log(obj.name);
 // console.log(obj.favoriteMovies[0]);
 // console.log(obj.favoritFoods[1]);
+// obj.sayMyName();
 
 
 /**함수**/
-function sayHello(name){
-    console.log('Hello', name);
+function sayHello(name, age){
+    console.log(`Hello ${name}, you are ${age} years old`); //`` 사용법!!
 }
-sayHello('David');
+sayHello('David', '22');
 
 // function addNum(a, b){
 //     console.log(a+ b);
@@ -99,3 +103,49 @@ let obj = {
 
 console.log(obj.sayHello2()); //console 자체도 object임
 obj.sayHello2();
+
+/**반복문 : for **/
+// for(let i=0; i<30; i++){
+//     if(i % 2 == 0){
+//         console.log(i);
+//     } else if(i % 5 == 0){
+//         console.log('5의 배수');
+//     }else{
+//         console.log('5의 배수가 아니다');
+//     }
+// }
+
+let array = ['사과', '복숭아', '배'];
+for(let i=0; i<array.length; i++){ //array도 오브젝트이다
+    console.log(array[i]);
+}
+
+//For kids in the group, give them candies.
+for (let i of array){// in을 사용하면 인덱스, of사용하면 요소(element)가 바로 콘솔에 출력됨
+    console.log(i);
+}
+for(let i in array){
+    console.log(array[i]);
+}
+
+// let d = 0;
+// for(d; d<5; d++){
+//     console.log(d);
+// }
+// console.log('outside loop d value : '+d);//루프를 빠져나왔을 때 d의 최종값은 5
+
+// for(i=3; i<5; i=i+4){
+//     console.log(i);//조건을 만족하는 최초값이 i=3 한번만 출력
+// }
+let i = 0;
+while(i <5){
+    console.log('inside while loop');
+    i = i+2;
+}
+
+let value = 0;
+do {
+    console.log(value);
+    value++;
+}while(value < 5);
+console.log('바깥', value);
