@@ -18,7 +18,7 @@ for(let i=1; i<31; i++){
         console.log(`fizz ${i}`);
     }else if(i%5 == 0){
         console.log(`buzz ${i}`);
-    }else if(i%3 !=0 && i%5!=0){
+    }else{
         console.log(i);
     }
     
