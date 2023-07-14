@@ -153,65 +153,65 @@
 
 /**배열 메서드**/
 
-let arr = [1, 2, 3, 'hello'];
-arr.reverse();
+// let arr = [1, 2, 3, 'hello'];
+// arr.reverse();
 
-console.log(arr);
-//push, pop, sort, split 등이 있다
-
-
-function canEnter(gender, age){
-    if(gender == 'female' && age >25){
-        return true;
-    }
-    return false;
-}
-
-console.log(canEnter('male', 30));
+// console.log(arr);
+// //push, pop, sort, split 등이 있다
 
 
-
-let title = document.getElementById('title');
-console.log(title.style);
-
-title.style.color = 'red';
-console.log(title.style.color);
-
-document.title = 'DOM Practice';//document 또한 키:밸류로 이루어진 오브젝트 구조이다
-
-title = document.querySelector('#title');
-title.style.color = 'orange';
-title.innerHTML = 'Hello Javascript';
-
-/*이밴트리스너*/
-
-
-// function notifyResize(){
-//     let width = window.innerWidth;
-//     let height = window.innerHeight;
-//     console.log(width, height);
+// function canEnter(gender, age){
+//     if(gender == 'female' && age >25){
+//         return true;
+//     }
+//     return false;
 // }
 
-//window.addEventListener("resize", notifyResize);
-//감지할 이벤트, 실행할 함수명,, 참고로 함수명 뒤에 괄호를 붙이면 함수 실행이 resize 하지 않아도 우선 한 번 실행됨
+// console.log(canEnter('male', 30));
 
 
-/** 오프라인 1차 - 7월 14일 */
-//DOM 구조 : 브라우저에서 보는 모든 것에 접근할 수 있다
 
-title = document.querySelector('#title');
+// let title = document.getElementById('title');
+// console.log(title.style);
 
-const colors = ['red', 'blue', 'green', 'yello', 'pink'];
+// title.style.color = 'red';
+// console.log(title.style.color);
 
-function generateRandomNumber(){
-   return  Math.floor(Math.random() * colors.length);
-}
+// document.title = 'DOM Practice';//document 또한 키:밸류로 이루어진 오브젝트 구조이다
 
-function changeColor(){
-    let index = generateRandomNumber();
-    title.style.color = colors[index];
-}
-title.addEventListener('click', changeColor);
+// title = document.querySelector('#title');
+// title.style.color = 'orange';
+// title.innerHTML = 'Hello Javascript';
+
+// /*이밴트리스너*/
+
+
+// // function notifyResize(){
+// //     let width = window.innerWidth;
+// //     let height = window.innerHeight;
+// //     console.log(width, height);
+// // }
+
+// //window.addEventListener("resize", notifyResize);
+// //감지할 이벤트, 실행할 함수명,, 참고로 함수명 뒤에 괄호를 붙이면 함수 실행이 resize 하지 않아도 우선 한 번 실행됨
+
+
+// /** 오프라인 1차 - 7월 14일 */
+// //DOM 구조 : 브라우저에서 보는 모든 것에 접근할 수 있다
+
+// title = document.querySelector('#title');
+
+// const colors = ['red', 'blue', 'green', 'yello', 'pink'];
+
+// function generateRandomNumber(){
+//    return  Math.floor(Math.random() * colors.length);
+// }
+
+// function changeColor(){
+//     let index = generateRandomNumber();
+//     title.style.color = colors[index];
+// }
+// title.addEventListener('click', changeColor);
 
 let data = [
     {회원번호:0, 아이디:'red', 성별:'남자', 나이:21},
@@ -221,7 +221,7 @@ let data = [
 ]
 
 for(let i=0; i<data.length; i++){
-    if(data[i].나이 >= 20){
-        console.log(data[i].회원번호);
+    if(data[i].나이 >= 20 && data[i].성별 == '여자'){
+        console.log('회원번호 :', data[i].회원번호);
     }
 }
