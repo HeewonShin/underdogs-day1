@@ -32,3 +32,15 @@ function numberCheck(array){
     }
 }
 console.log('최대값 : ', max);
+
+function returnMaxNumber(arr){
+    maxNum = -100;
+    for(num of arr){
+        if(num> maxNum){
+            maxNum = num;
+            console.log('최대값: ', maxNum);
+        }
+    }
+    return maxNum;
+}
+console.log(returnMaxNumber([1, 2, 55, 77]))

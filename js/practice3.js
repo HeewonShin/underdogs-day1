@@ -27,3 +27,6 @@ function randomColor(){
 
 title.addEventListener('click', randomColor);
 
+
+
+

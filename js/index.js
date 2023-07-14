@@ -225,3 +225,9 @@ for(let i=0; i<data.length; i++){
         console.log('회원번호 :', data[i].회원번호);
     }
 }
+
+// for(let element of data){
+//     if(element.gender === '여자' && element.나이 > 20){
+//         console.log('회원번호 :', data[i].회원번호);
+//     }
+// }
